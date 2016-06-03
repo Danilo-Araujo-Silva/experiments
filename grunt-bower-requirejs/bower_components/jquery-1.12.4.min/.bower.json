@@ -1,0 +1,14 @@
+{
+  "name": "jquery-1.12.4.min",
+  "_cacheHeaders": {
+    "ETag": "W/\"573f46fe-17b8b\"",
+    "Last-Modified": "Fri, 20 May 2016 17:18:54 GMT",
+    "Content-Type": "application/javascript; charset=utf-8"
+  },
+  "_release": "e-tag:W/\"573f46f",
+  "main": "index.js",
+  "_source": "https://code.jquery.com/jquery-1.12.4.min.js",
+  "_target": "*",
+  "_originalSource": "https://code.jquery.com/jquery-1.12.4.min.js",
+  "_direct": true
+}

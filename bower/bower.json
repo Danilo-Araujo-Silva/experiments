@@ -1,0 +1,25 @@
+{
+  "name": "packagessss",
+  "homepage": "https://github.com/GarouDan/experiments",
+  "authors": [
+    "Danilo Araújo Silva <silva.danilo.araujo@gmail.com>"
+  ],
+  "description": "adsfadsfafsd",
+  "main": "12341234",
+  "keywords": [
+    "alkdsjfklasdf"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.4",
+    "jquery-1.12.4.min": "https://code.jquery.com/jquery-1.12.4.min.js",
+    "underscore": "^1.8.3"
+  }
+}

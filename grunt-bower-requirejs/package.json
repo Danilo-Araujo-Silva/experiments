@@ -1,0 +1,22 @@
+{
+  "name": "a",
+  "version": "1.0.0",
+  "description": "asdf",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0.1"
+  },
+  "scripts": {
+    "test": "adsf"
+  },
+  "repository": {
+    "type": "git",
+    "url": "asdf"
+  },
+  "keywords": [
+    "asdf"
+  ],
+  "author": "adsf",
+  "license": "UNLICENSED"
+}
