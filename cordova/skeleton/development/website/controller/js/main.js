@@ -12,15 +12,15 @@ define(["require", "exports"], function (require, exports) {
     requirejs.config({
     	baseUrl: '../../',
         paths: {
-        	"requirejs/requirejs": "vendor/requirejs/requirejs/2.2.0/require.min",
-        	"jboss/livereload": "vendor/jboss/livereload/2.0.8/livereload",
-            "jquery/jquery": "vendor/jquery/jquery/1.12.4/jquery-1.12.4.min"
+        	"vendor/requirejs/requirejs": "vendor/requirejs/requirejs/2.2.0/require.min",
+        	"vendor/jboss/livereload": "vendor/jboss/livereload/2.0.8/livereload",
+            "vendor/jquery/jquery": "vendor/jquery/jquery/1.12.4/jquery-1.12.4.min"
         }
     });
     
     if (environment != "prd") {
-    	require(["jboss/livereload"]);
+    	require(["vendor/jboss/livereload"]);
     }
     
-    require(["jquery/jquery"]);
+    require(["vendor/jquery/jquery"]);
 });
