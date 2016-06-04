@@ -1,0 +1,33 @@
+{
+  "name": "skeleton",
+  "version": "0.0.1",
+  "description": "Skeleton proposal for software development.",
+  "main": "npm.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "jshint **.js --reporter checkstyle > checkstyle.xml",
+    "uglify": "uglifyjs -c -m --mangle-props"
+  },
+  "author": "Danilo Araújo Silva (GarouDan)",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "grunt-sync": "^0.5.2",
+    "jshint": "^2.9.2",
+    "syncy": "^1.0.2"
+  },
+  "devDependencies": {
+    "browserify": "^13.0.1",
+    "graceful-fs": "^4.1.4",
+    "grunt": "^1.0.1",
+    "grunt-contrib-uglify": "^1.0.1",
+    "gulp": "^3.9.1",
+    "gulp-dir-sync": "^0.1.2",
+    "gulp-directory-sync": "^1.2.3",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.3",
+    "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.6",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
