@@ -13,7 +13,7 @@
 		href="http://garoudan.com/skeleton"
 	> GarouDan (Danilo Araújo Silva])
 	</author>
-	<content src="index.html" />
+	<content src="view/html/index.html" />
 	<plugin
 		name="cordova-plugin-whitelist"
 		spec="1" />
@@ -29,81 +29,13 @@
 		value="screen" />
 	<platform name="android">
 		<allow-intent href="market:*" />
-		<icon
-			src="resources/android/icon/ldpi.png"
-			density="ldpi" />
-		<icon
-			src="resources/android/icon/mdpi.png"
-			density="mdpi" />
-		<icon
-			src="resources/android/icon/hdpi.png"
-			density="hdpi" />
-		<icon
-			src="resources/android/icon/xhdpi.png"
-			density="xhdpi" />
-		<icon
-			src="resources/android/icon/xxhdpi.png"
-			density="xxhdpi" />
-		<icon
-			src="resources/android/icon/xxxhdpi.png"
-			density="xxxhdpi" />
-		<splash
-			src="resources/android/splash/ldpi.png"
-			density="ldpi" />
-		<splash
-			src="resources/android/splash/mdpi.png"
-			density="mdpi" />
-		<splash
-			src="resources/android/splash/hdpi.png"
-			density="hdpi" />
-		<splash
-			src="resources/android/splash/xhdpi.png"
-			density="xhdpi" />
-		<splash
-			src="resources/android/splash/xxhdpi.png"
-			density="xxhdpi" />
-		<splash
-			src="resources/android/splash/xxxhdpi.png"
-			density="xxxhdpi" />
+		<icon src="www/view/image/icon/app/android/generic.png" />
+		<splash src="www/view/image/splash/android/generic.png" />
 	</platform>
 	<platform name="ios">
 		<allow-intent href="itms:*" />
 		<allow-intent href="itms-apps:*" />
-		<icon
-			src="resources/ios/icon/ldpi.png"
-			density="ldpi" />
-		<icon
-			src="resources/ios/icon/mdpi.png"
-			density="mdpi" />
-		<icon
-			src="resources/ios/icon/hdpi.png"
-			density="hdpi" />
-		<icon
-			src="resources/ios/icon/xhdpi.png"
-			density="xhdpi" />
-		<icon
-			src="resources/ios/icon/xxhdpi.png"
-			density="xxhdpi" />
-		<icon
-			src="resources/ios/icon/xxxhdpi.png"
-			density="xxxhdpi" />
-		<splash
-			src="resources/ios/splash/ldpi.png"
-			density="ldpi" />
-		<splash
-			src="resources/ios/splash/mdpi.png"
-			density="mdpi" />
-		<splash
-			src="resources/ios/splash/hdpi.png"
-			density="hdpi" />
-		<splash
-			src="resources/ios/splash/xhdpi.png"
-			density="xhdpi" />
-		<splash
-			src="resources/ios/splash/xxhdpi.png"
-			density="xxhdpi" />
-		<splash
-			src="resources/ios/splash/xxxhdpi.png"
-			density="xxxhdpi" />
+		<icon src="www/view/image/icon/app/ios/generic.png" />
+		<splash src="www/view/image/splash/ios/generic.png" />
 	</platform>
 </widget>
