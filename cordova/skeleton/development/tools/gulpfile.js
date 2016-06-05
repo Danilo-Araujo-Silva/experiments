@@ -7,6 +7,7 @@ var buffer = require('vinyl-buffer');
 var uglify = require('gulp-uglify');
 var sourcemaps = require('gulp-sourcemaps');
 var util = require('gulp-util');
+var shell = require('gulp-shell');
 
 
 gulp.task('default', function() {
@@ -23,18 +24,29 @@ gulp.task('sync', function() {
 	dirSync('../website', '../cordova/www', {});
 });
 
-gulp.task('uglify', function () {
-	var b = browserify({
-		entries: '../www/controller/js/index.js',
-		debug: true
-	});
-
-	return b.bundle()
-	.pipe(source('all.js'))
-	.pipe(buffer())
-	.pipe(sourcemaps.init({loadMaps: true, identityMap: true}))
-	.pipe(uglify({outSourceMap: "all.js.map"}))
-	.on('error', util.log)
-	.pipe(sourcemaps.write('./'))
-	.pipe(gulp.dest('../www/other/compressed/js/'));
+gulp.task('watch', function () {
+	gulp.watch(
+		['../www/controller/js/**/*.js', '../www/model/js/**/*.js'],
+		['uglify']
+	);
 });
+
+gulp.task('uglify', shell.task('node ../www/vendor/requirejs/requirejs/2.2.0/r.js -o build.js'));
+
+//gulp.task('uglify', function () {
+//	var b = browserify({
+//		entries: [
+//          '../www/controller/js/index.js',
+//        ],
+//		debug: true
+//	});
+//
+//	return b.bundle()
+//	.pipe(source('all.js'))
+//	.pipe(buffer())
+//	.pipe(sourcemaps.init({loadMaps: true, identityMap: true}))
+//	.pipe(uglify({outSourceMap: "all.js.map"}))
+//	.on('error', util.log)
+//	.pipe(sourcemaps.write('./'))
+//	.pipe(gulp.dest('../www/other/compressed/js/'));
+//});

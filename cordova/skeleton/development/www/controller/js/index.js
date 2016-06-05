@@ -1,5 +1,3 @@
-require(
-	["./main"],
-	function success() {
-	}
-);
+require(["./skeleton"], function success() {
+	
+});

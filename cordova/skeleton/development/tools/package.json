@@ -23,6 +23,7 @@
     "gulp": "^3.9.1",
     "gulp-dir-sync": "^0.1.2",
     "gulp-directory-sync": "^1.2.3",
+    "gulp-shell": "^0.5.2",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^1.5.3",
     "gulp-util": "^3.0.7",

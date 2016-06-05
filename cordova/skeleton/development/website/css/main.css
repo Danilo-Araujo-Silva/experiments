@@ -1,0 +1,11 @@
+@import "reset.css";
+
+* {
+	box-sizing: border-box;
+	font-family: 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+}
+
+body {
+    height:100vh;
+    width:100vw;
+}
