@@ -14,7 +14,9 @@ gulp.task('default', function() {
 
 });
 
-gulp.task('sync', function() {
+gulp.task('uglify', shell.task('node ../www/vendor/requirejs/requirejs/2.2.0/r.js -o build.js'));
+
+gulp.task('watch-sync', function() {
 	dirSync('../www/view/audio', '../website/audio', {});
 	dirSync('../www/view/css', '../website/css', {filter: '^(.*[.]css)$'});
 	dirSync('../www/view/font', '../website/font', {});
@@ -24,14 +26,14 @@ gulp.task('sync', function() {
 	dirSync('../website', '../cordova/www', {});
 });
 
-gulp.task('watch', function () {
+gulp.task('watch-uglify', function () {
 	gulp.watch(
 		['../www/controller/js/**/*.js', '../www/model/js/**/*.js'],
 		['uglify']
 	);
 });
 
-gulp.task('uglify', shell.task('node ../www/vendor/requirejs/requirejs/2.2.0/r.js -o build.js'));
+gulp.task('watch', ['watch-sync', 'watch-uglify']);
 
 //gulp.task('uglify', function () {
 //	var b = browserify({
