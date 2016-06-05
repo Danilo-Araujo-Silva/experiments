@@ -1,3 +1,0 @@
-require(["./skeleton"], function success() {
-	
-});

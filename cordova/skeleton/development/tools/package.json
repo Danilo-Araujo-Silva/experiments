@@ -11,11 +11,11 @@
   "author": "Danilo Araújo Silva (GarouDan)",
   "license": "Apache-2.0",
   "dependencies": {
-    "grunt-sync": "^0.5.2",
-    "jshint": "^2.9.2",
-    "syncy": "^1.0.2"
   },
   "devDependencies": {
+    "grunt-sync": "^0.5.2",
+    "jshint": "^2.9.2",
+    "syncy": "^1.0.2",
     "browserify": "^13.0.1",
     "graceful-fs": "^4.1.4",
     "grunt": "^1.0.1",
