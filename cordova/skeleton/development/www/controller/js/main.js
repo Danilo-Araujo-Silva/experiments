@@ -38,7 +38,7 @@ define(["require", "exports"], function (require, exports) {
 		}
 		
 		this.requireVendors = function () {
-			require(["vendor/jquery/jquery"], self.handleSucess, self.handleError);
+			require(["vendor/jquery/jquery"]);
 		}
 
 		self.initialize(options);
